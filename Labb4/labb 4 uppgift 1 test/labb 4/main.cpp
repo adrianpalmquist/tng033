@@ -52,24 +52,31 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
 //Läs in
 int read(map<string,int> &word)
 {
-    ifstream file("uppgift1.txt");
-    
-    map<string,int>::iterator it;
-    
+    string file_name;
     string s;
     string temp;
     
     int counter=0;
     
+    cout << "Enter file name: ";
+    cin >> file_name;
+    
+    
+    ifstream infil(file_name);
+    
+    map<string,int>::iterator it;
+    
+   
+    
     //Testa om det går att öppna fil
-    if (!file) {
+    if (!infil) {
         cout << "FEL!" << endl;
         return 0;
     }
     
     
     
-    while(file>>s)
+    while(infil>>s)
     {
         for(int j = 0;j<s.size();j++)//testa varje element
         {
@@ -78,7 +85,7 @@ int read(map<string,int> &word)
             if(('A'<=s[j]) && (s[j]<= 'Z')) temp+=s[j]+('a'-'A');
         }
         
-        it = word.find(temp); //Leta eter om temp finns 
+        it = word.find(temp); //kolla om temp finns
         
         if(it != word.end())
         {
@@ -94,7 +101,7 @@ int read(map<string,int> &word)
         temp = "";
     }
     
-    file.close();
+    infil.close();
     return counter;
 }
 
