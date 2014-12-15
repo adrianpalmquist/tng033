@@ -36,7 +36,7 @@ Polynomial::~Polynomial(){
     cout << "Polynomial destructor was called:" << endl;
     cout << *this << endl << endl;
     delete [] c;
-    //howMany = 0;
+    howMany = 0;
 }
 
 
