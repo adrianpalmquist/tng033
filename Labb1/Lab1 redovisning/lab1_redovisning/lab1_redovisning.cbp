@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lab1_redovisning" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/lab1_redovisning" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/lab1_redovisning" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Lab1_Uppg_2.depend" />
+		<Unit filename="Lab1_Uppg_2.layout" />
+		<Unit filename="diver.cpp" />
+		<Unit filename="diver.h" />
+		<Unit filename="diver_data.txt" />
+		<Unit filename="diver_data1.txt" />
+		<Unit filename="diver_data2.txt" />
+		<Unit filename="diver_data3.txt" />
+		<Unit filename="diver_data4.txt" />
+		<Unit filename="lab1_redovisning.cbp" />
+		<Unit filename="main_uppg2.cpp" />
+		<Unit filename="out_uppg2.txt" />
+		<Unit filename="out_uppg21.txt" />
+		<Unit filename="out_uppg22.txt" />
+		<Unit filename="out_uppg23.txt" />
+		<Unit filename="out_uppg24.txt" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

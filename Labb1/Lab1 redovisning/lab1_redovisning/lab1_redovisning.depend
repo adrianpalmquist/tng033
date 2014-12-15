@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1415955303 source:c:\users\oscno829\desktop\labb1\lab1 redovisning\lab1_redovisning\main_uppg2.cpp
+	<iostream>
+	<iomanip>
+	<fstream>
+	"diver.h"
+
+1415949408 c:\users\oscno829\desktop\labb1\lab1 redovisning\lab1_redovisning\diver.h
+	<iostream>
+	<string>
+
+1415955690 source:c:\users\oscno829\desktop\labb1\lab1 redovisning\lab1_redovisning\diver.cpp
+	<iomanip>
+	<ios>
+	<sstream>
+	<array>
+	"diver.h"
+

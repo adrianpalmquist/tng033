@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1415949408 source:c:\users\oscno829\desktop\labb1\lab1 redovisning\uppgift1\labb1_1\main_uppg1.cpp
+	<iostream>
+	<iomanip>
+	<fstream>
+	<array>
+	"statistics.h"
+
+1415949408 c:\users\oscno829\desktop\labb1\lab1 redovisning\uppgift1\labb1_1\statistics.h
+	<iostream>
+
+1415949408 source:c:\users\oscno829\desktop\labb1\lab1 redovisning\uppgift1\labb1_1\statistics.cpp
+	<iostream>
+	<cmath>
+	<math.h>
+	"statistics.h"
+

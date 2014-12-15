@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1414778594 source:c:\users\oscno829\desktop\lab1_uppg_2\main_uppg2.cpp
+	<iostream>
+	<iomanip>
+	<fstream>
+	"diver.h"
+
+1414778492 c:\users\oscno829\desktop\lab1_uppg_2\diver.h
+	<iostream>
+	<string>
+
