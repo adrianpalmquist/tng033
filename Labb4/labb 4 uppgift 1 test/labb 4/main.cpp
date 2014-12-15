@@ -26,25 +26,27 @@ bool comp(pair<int,string> i, pair<int,string> j)
 void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter)
 {
     map<string,int>::iterator it;
-    vector<pair<int,string> >::iterator it_vec;
+    
+    vector<pair<int,string>>::iterator it_vec;
     
     for(it = word.begin();it!=word.end();it++)
     {
-        cout<<it->first<<": "<<it->second<<endl;
+        cout << it->first << ": " << it->second<<endl;
         
         pair <int,string> p (it->second,it->first);
         
         par_vec.push_back(p);
     }
-    cout<<endl;
+    
+    cout << endl;
     
     sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
     
     for(it_vec=par_vec.begin();it_vec != par_vec.end();it_vec++) //Skriv
     {
-        cout<<it_vec->first<<it_vec->second<<endl;
+        cout << it_vec->first << it_vec->second<<endl;
     }
-    cout<<endl<<endl<<"counter: "<<counter<<endl;
+    cout << endl << endl << "counter: " << counter << endl;
 }
 
 //Läs in
@@ -87,9 +89,11 @@ int read(map<string,int> &word)
         {
             word[temp]=1;
         }
+        
         counter++;
-        temp="";
+        temp = "";
     }
+    
     file.close();
     return counter;
 }
@@ -102,6 +106,7 @@ int main()
     vector<pair<int,string> > par_vec;
     
     print(par_vec, word, read(word));
+    
     return 0;
 }
 
