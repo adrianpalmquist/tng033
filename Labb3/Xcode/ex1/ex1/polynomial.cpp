@@ -1,7 +1,7 @@
 /*********************************************************
-* Class Polynomial member functions implementation       *
-* TNG033: Lab 3                                          *
-**********************************************************/
+ * Class Polynomial member functions implementation       *
+ * TNG033: Lab 3                                          *
+ **********************************************************/
 
 #include "polynomial.h"
 #include <cassert>
@@ -78,11 +78,14 @@ Polynomial const Polynomial::operator+(const Polynomial& p) const{
     }
     else
         total = p2.howMany;
- 
+    
     p3.c = new double[total];
     
-    for (int i = 0; i < p1.howMany; i++) {
-        p3.c[i] = p1.c[i];
+    for (int i = 0; i < total; i++) {
+        if (i < p1.howMany)
+            p3.c[i] = p1.c[i];
+        else
+            p3.c[i] = 0;
     }
     
     for (int i = 0; i < p2.howMany; i++) {
