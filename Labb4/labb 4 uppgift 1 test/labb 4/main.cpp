@@ -14,7 +14,7 @@
 #include <algorithm>
 
 using namespace std;
-bool comp(pair<int,string> i, pair<int,string> j)//j‰mnfˆr tvÂ par
+bool comp(pair<int,string> i, pair<int,string> j)//jämför
 {
     return (i.first > j.first);
 }
@@ -22,18 +22,21 @@ bool comp(pair<int,string> i, pair<int,string> j)//j‰mnfˆr tvÂ par
 void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter)
 {
     map<string,int>::iterator it;
-    vector<pair<int,string> >::iterator it_vec;//iteratorer
+    vector<pair<int,string> >::iterator it_vec;
     
-    for(it = word.begin();it!=word.end();it++)//skriv ut map och skapa vectorn
+    for(it = word.begin();it!=word.end();it++)
     {
         cout<<it->first<<": "<<it->second<<endl;
+        
         pair <int,string> p (it->second,it->first);
+        
         par_vec.push_back(p);
     }
     cout<<endl;
     
-    sort(par_vec.begin(),par_vec.end(), comp);//sortera vectorn
-    for(it_vec=par_vec.begin();it_vec != par_vec.end();it_vec++)//skriv ut vectorn
+    sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
+    
+    for(it_vec=par_vec.begin();it_vec != par_vec.end();it_vec++) //Skriv
     {
         cout<<it_vec->first<<it_vec->second<<endl;
     }
@@ -51,7 +54,7 @@ int read(map<string,int> &word)
     
     int counter=0;
     
-    //Test if opening the file suceeded.
+    //Testa om det går att öppna fil
     if (!file) {
         cout << "FEL!" << endl;
         return 0;
@@ -61,26 +64,26 @@ int read(map<string,int> &word)
     
     while(file>>s)
     {
-        for(int j = 0;j<s.size();j++)//testar varge element i str‰ngen
+        for(int j = 0;j<s.size();j++)//testa varje element
         {
-            if((('a'<=s[j]) && (s[j]<= 'z')) || (s[j]=='\x27') || (s[j]=='\x60')) tmp+=s[j];
+            if((('a'<=s[j]) && (s[j]<= 'z')) || (s[j]=='\x27') || (s[j]=='\x60')) temp+=s[j];
             
-            if(('A'<=s[j]) && (s[j]<= 'Z')) tmp+=s[j]+('a'-'A');
+            if(('A'<=s[j]) && (s[j]<= 'Z')) temp+=s[j]+('a'-'A');
         }
         
-        it = word.find(tmp); //iteratorn letar efter tmp
+        it = word.find(temp); //Leta eter om temp finns 
         
         if(it != word.end())
         {
-            word[tmp]=it->second++;
+            word[temp]=it->second++;
         }
         
         else
         {
-            word[tmp]=1;
+            word[temp]=1;
         }
         counter++;
-        tmp="";
+        temp="";
     }
     file.close();
     return counter;
