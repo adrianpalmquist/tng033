@@ -5,6 +5,7 @@
 
 #include "logarithm.h"
 #include "polynomial.h"
+#include <utility>
 
 //ADD implementation of the member functions for class Log
 
@@ -30,24 +31,25 @@ Log::Log(const Log& l){
     c1 = l.c1;
     c2 = l.c2;
     b = l.b;
-    exp = l.exp;
+    exp = l.exp->clone();
 }
 
 //Destructor
 Log::~Log(){
-    cout << "Log destructor was called:" << endl;
-    cout << *this << endl << endl;
     delete exp;
     c1 = c2 = b = 0;
 }
 
 //An assignment operator
 const Log& Log::operator=(const Log& l){
-    c1 = l.c1;
-    c2 = l.c2;
-    b = l.b;
-    delete exp;
-    exp = l.exp;
+    
+    if (this != &l){
+        Log copy(l);
+        swap(c1, copy.c1);
+        swap(c2, copy.c2);
+        swap(b, copy.b);
+        swap(exp, copy.exp);
+    }
     
     return *this;
 }

@@ -18,6 +18,9 @@ const double EPSILON = 1.0e-5;
 class Expression
 {
 public:
+    
+    Expression() = default;
+    
     //Destructor
     virtual ~Expression() { };
     

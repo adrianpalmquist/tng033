@@ -5,6 +5,7 @@
 
 #include "polynomial.h"
 #include <cassert>
+#include <utility>
 
 //ADD implementation of the member functions for class Polynomial
 
@@ -33,10 +34,8 @@ Polynomial::Polynomial(double n){
 
 
 Polynomial::~Polynomial(){
-    cout << "Polynomial destructor was called:" << endl;
-    cout << *this << endl << endl;
     delete [] c;
-    //howMany = 0;
+    howMany = 0;
 }
 
 
@@ -52,13 +51,11 @@ Polynomial::Polynomial(const Polynomial& p){
 //An assignment operator
 
 const Polynomial& Polynomial::operator=(const Polynomial& p){
+    
     if (this != &p) {
-        delete [] c;
-        howMany = p.howMany;
-        c = new double[howMany];
-        for (int i = 0; i < howMany; i++) {
-            c[i] = p.c[i];
-        }
+        Polynomial copy(p);
+        swap(howMany, copy.howMany);
+        swap(c, copy.c);
     }
     return *this;
 }
