@@ -14,11 +14,14 @@
 #include <algorithm>
 
 using namespace std;
-bool comp(pair<int,string> i, pair<int,string> j)//jämför
+
+//Jämför
+bool comp(pair<int,string> i, pair<int,string> j)
 {
     return (i.first > j.first);
 }
 
+//Skriv ut
 void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter)
 {
     map<string,int>::iterator it;
@@ -43,6 +46,7 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     cout<<endl<<endl<<"counter: "<<counter<<endl;
 }
 
+//Läs in
 int read(map<string,int> &word)
 {
     ifstream file("uppgift1");
@@ -88,6 +92,8 @@ int read(map<string,int> &word)
     file.close();
     return counter;
 }
+
+
 
 int main()
 {
