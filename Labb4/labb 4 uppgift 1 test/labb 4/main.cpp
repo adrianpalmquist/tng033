@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <iomanip>
 #include <map>
 #include <fstream>
 #include <utility>
@@ -49,7 +50,7 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
 //Läs in
 int read(map<string,int> &word)
 {
-    ifstream file("uppgift1");
+    ifstream file("uppgift1.txt");
     
     map<string,int>::iterator it;
     
