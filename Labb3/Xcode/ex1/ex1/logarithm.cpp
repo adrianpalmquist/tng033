@@ -56,11 +56,13 @@ const Log& Log::operator=(const Log& l){
 double Log::operator()(double x) const{
     double f = c1;
     
+    if (exp){
     if (b == 2) {
         f += c2 * log2(exp->operator()(x));
     }
     else
         f += c2 * log10(exp->operator()(x));
+    }
     
     return f;
 }
