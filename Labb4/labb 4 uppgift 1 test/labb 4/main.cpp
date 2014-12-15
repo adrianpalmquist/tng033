@@ -16,6 +16,7 @@
 
 using namespace std;
 
+
 //Jämför
 bool comp(pair<int,string> i, pair<int,string> j)
 {
@@ -46,7 +47,8 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     {
         cout << it_vec->first << it_vec->second<<endl;
     }
-    cout << endl << endl << "counter: " << counter << endl;
+    
+    //cout << endl << endl << "counter: " << counter << endl;
 }
 
 //Läs in
@@ -69,7 +71,8 @@ int read(map<string,int> &word)
    
     
     //Testa om det går att öppna fil
-    if (!infil) {
+    if (!infil)
+    {
         cout << "FEL!" << endl;
         return 0;
     }
