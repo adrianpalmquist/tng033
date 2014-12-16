@@ -18,9 +18,10 @@ using namespace std;
 
 typedef vector<pair<int,string>> parVec;
 typedef map<string,int> sMap;
+typedef pair<int,string> par;
 
 //Jämför
-bool comp(pair<int,string> i, pair<int,string> j)
+bool comp(par i, par j)
 {
     return (i.first > j.first);
 }
@@ -38,7 +39,7 @@ void print(parVec &par_vec, sMap &word, int counter)
         
         //cout << "Key: " << it->first << endl << "Values:" << endl;
         
-        pair <int,string> p (it->second,it->first);
+        par p (it->second,it->first);
         
         par_vec.push_back(p);
     }
