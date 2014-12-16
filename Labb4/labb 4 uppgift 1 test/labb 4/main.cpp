@@ -16,6 +16,8 @@
 
 using namespace std;
 
+typedef vector<pair<int,string>> parVec;
+typedef map<string,int> sMap;
 
 //Jämför
 bool comp(pair<int,string> i, pair<int,string> j)
@@ -24,11 +26,11 @@ bool comp(pair<int,string> i, pair<int,string> j)
 }
 
 //Skriv ut
-void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter)
+void print(parVec &par_vec, sMap &word, int counter)
 {
-    map<string,int>::iterator it;
+    sMap::iterator it;
     
-    vector<pair<int,string>>::iterator it_vec;
+    parVec::iterator it_vec;
     
     for(it = word.begin(); it!=word.end(); it++)
     {
@@ -58,7 +60,7 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
 
 
 //Läs in
-int read(map<string,int> &word)
+int read(sMap &word)
 {
     string file_name;
     string s;
@@ -72,7 +74,7 @@ int read(map<string,int> &word)
     
     ifstream infil(file_name);
     
-    map<string,int>::iterator itr;
+    sMap::iterator itr;
     
    
     
@@ -119,8 +121,8 @@ int read(map<string,int> &word)
 
 int main()
 {
-    map<string,int> word;
-    vector<pair<int,string>> par_vec;
+    sMap word;
+    parVec par_vec;
     
     print(par_vec, word, read(word));
     
