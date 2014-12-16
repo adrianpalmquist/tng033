@@ -32,7 +32,9 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     
     for(it = word.begin(); it!=word.end(); it++)
     {
-        cout << it->first << ": " << it->second<<endl;
+        //cout << it->first << ": " << it->second<<endl;
+        
+        //cout << "Key: " << it->first << endl << "Values:" << endl;
         
         pair <int,string> p (it->second,it->first);
         
@@ -43,12 +45,12 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     
     sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
     
-    /*
+    
     for(it_vec=par_vec.begin(); it_vec != par_vec.end(); it_vec++) //Skriv
     {
-        cout << it_vec->first << it_vec->second<<endl;
+        cout << it_vec->first << " " << it_vec->second<<endl;
     }
-    */
+    
     
     cout << endl << endl << "counter: " << counter << endl;
 }
@@ -62,7 +64,7 @@ int read(map<string,int> &word)
     string s;
     string temp;
     
-    int counter=0;
+    int counter = 0;
     
     cout << "Enter file name: ";
     cin >> file_name;
@@ -70,7 +72,7 @@ int read(map<string,int> &word)
     
     ifstream infil(file_name);
     
-    map<string,int>::iterator it;
+    map<string,int>::iterator itr;
     
    
     
@@ -92,16 +94,17 @@ int read(map<string,int> &word)
             if(('A'<=s[j]) && (s[j] <= 'Z')) temp +=s[j]+('a'-'A');
         }
         
-        it = word.find(temp); //kolla om temp finns
+        itr = word.find(temp); //kolla om temp finns
         
-        if(it != word.end())
+        if(itr != word.end())
         {
-            word[temp] = it->second++;
+            word[temp] = itr->second + 1;
         }
         
         else
         {
-            word[temp]=1;
+            word[temp]++;
+            
         }
         
         counter++;
