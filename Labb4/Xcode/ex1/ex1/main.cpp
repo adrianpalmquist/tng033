@@ -66,18 +66,22 @@ int read(map<string,int> &word)
     
     ifstream infil(file_name);
     
-    map<string,int>::iterator it;
+
     
     
-    
-    //Testa om det går att öppna fil
-    if (!infil)
+    if (!infil.is_open())
     {
-        cout << "FEL!" << endl;
+        cout << "Failed to open " << file_name << endl;
         return 0;
     }
     
+    istream_iterator<string> in_it(infil);
+    istream_iterator<string> in_end;
     
+    copy(in_it, in_end, inserter(word,word.begin()));
+    
+    
+    /*
     
     while(infil>>s)
     {
@@ -103,6 +107,9 @@ int read(map<string,int> &word)
         counter++;
         temp = "";
     }
+     */
+    
+    
     
     infil.close();
     return counter;
