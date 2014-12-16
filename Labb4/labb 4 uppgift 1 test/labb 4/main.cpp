@@ -13,6 +13,8 @@
 #include <utility>
 #include <vector>
 #include <algorithm>
+#include <locale>
+#include <string>
 
 using namespace std;
 
@@ -86,15 +88,20 @@ int read(sMap &word)
         return 0;
     }
     
-    
+    locale loc;
     
     while(infil>>s)
     {
         for(int j = 0; j<s.size(); j++)//testa varje element
         {
+            /*
             if((('a'<=s[j]) && (s[j] <= 'z')) || (s[j] =='\x27') || (s[j] =='\x60')) temp +=s[j];
             
             if(('A'<=s[j]) && (s[j] <= 'Z')) temp +=s[j]+('a'-'A');
+             */
+            
+            temp += tolower(s[j], loc);
+            
         }
         
         itr = word.find(temp); //kolla om temp finns
