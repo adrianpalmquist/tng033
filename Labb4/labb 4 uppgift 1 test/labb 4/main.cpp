@@ -30,11 +30,17 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     
     vector<pair<int,string>>::iterator it_vec;
     
+    cout << "Sortering i bokstavsordning" << endl;
+    
+    cout << endl;
+    
     for(it = word.begin(); it!=word.end(); it++)
     {
-        //cout << it->first << ": " << it->second<<endl;
+        cout << left << setw(10) << it->first << right << setw(60) << it->second<<endl;
         
         //cout << "Key: " << it->first << endl << "Values:" << endl;
+        
+        //cout << it_vec->first << " " << it_vec->second<<endl;
         
         pair <int,string> p (it->second,it->first);
         
@@ -43,12 +49,14 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     
     cout << endl;
     
+    cout << "Sortering efter antal ord i texten" << endl;
+    
     sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
     
     
     for(it_vec=par_vec.begin(); it_vec != par_vec.end(); it_vec++) //Skriv
     {
-        cout << it_vec->first << " " << it_vec->second<<endl;
+        cout << left << setw(10) << it_vec->second << right << setw(60)<< it_vec->first <<endl;
     }
     
     
