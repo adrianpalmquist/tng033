@@ -43,12 +43,14 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     
     sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
     
+    /*
     for(it_vec=par_vec.begin();it_vec != par_vec.end();it_vec++) //Skriv
     {
         cout << it_vec->first << it_vec->second<<endl;
     }
+    */
     
-    //cout << endl << endl << "counter: " << counter << endl;
+    cout << endl << endl << "counter: " << counter << endl;
 }
 
 //Läs in
