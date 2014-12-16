@@ -30,7 +30,7 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     
     vector<pair<int,string>>::iterator it_vec;
     
-    for(it = word.begin();it!=word.end();it++)
+    for(it = word.begin(); it!=word.end(); it++)
     {
         cout << it->first << ": " << it->second<<endl;
         
@@ -44,7 +44,7 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
     
     /*
-    for(it_vec=par_vec.begin();it_vec != par_vec.end();it_vec++) //Skriv
+    for(it_vec=par_vec.begin(); it_vec != par_vec.end(); it_vec++) //Skriv
     {
         cout << it_vec->first << it_vec->second<<endl;
     }
@@ -52,6 +52,8 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     
     cout << endl << endl << "counter: " << counter << endl;
 }
+
+
 
 //Läs in
 int read(map<string,int> &word)
@@ -83,18 +85,18 @@ int read(map<string,int> &word)
     
     while(infil>>s)
     {
-        for(int j = 0;j<s.size();j++)//testa varje element
+        for(int j = 0; j<s.size(); j++)//testa varje element
         {
-            if((('a'<=s[j]) && (s[j]<= 'z')) || (s[j]=='\x27') || (s[j]=='\x60')) temp+=s[j];
+            if((('a'<=s[j]) && (s[j] <= 'z')) || (s[j] =='\x27') || (s[j] =='\x60')) temp +=s[j];
             
-            if(('A'<=s[j]) && (s[j]<= 'Z')) temp+=s[j]+('a'-'A');
+            if(('A'<=s[j]) && (s[j] <= 'Z')) temp +=s[j]+('a'-'A');
         }
         
         it = word.find(temp); //kolla om temp finns
         
         if(it != word.end())
         {
-            word[temp]=it->second++;
+            word[temp] = it->second++;
         }
         
         else
@@ -115,7 +117,7 @@ int read(map<string,int> &word)
 int main()
 {
     map<string,int> word;
-    vector<pair<int,string> > par_vec;
+    vector<pair<int,string>> par_vec;
     
     print(par_vec, word, read(word));
     
