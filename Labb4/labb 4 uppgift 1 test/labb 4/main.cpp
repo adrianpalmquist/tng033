@@ -16,7 +16,7 @@
 
 using namespace std;
 
-typedef vector<pair<int,string>> parVec;
+typedef vector<pair<int,string>> pVec;
 typedef map<string,int> sMap;
 typedef pair<int,string> par;
 
@@ -27,11 +27,11 @@ bool comp(par i, par j)
 }
 
 //Skriv ut
-void print(parVec &par_vec, sMap &word, int counter)
+void print(pVec &par_vec, sMap &word, int counter)
 {
     sMap::iterator it;
     
-    parVec::iterator it_vec;
+    pVec::iterator it_vec;
     
     for(it = word.begin(); it!=word.end(); it++)
     {
@@ -123,7 +123,7 @@ int read(sMap &word)
 int main()
 {
     sMap word;
-    parVec par_vec;
+    pVec par_vec;
     
     print(par_vec, word, read(word));
     
