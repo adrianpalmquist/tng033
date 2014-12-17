@@ -7,7 +7,7 @@ Node::Node (int nodeVal, Node *nextPtr)
     //cout << "Constructor Node" << std::endl;
 }
 
-
+// Insert x into new node
 Node* Node::insert (int x)
 {
     next = new Node (x, next);

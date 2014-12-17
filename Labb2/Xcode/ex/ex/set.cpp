@@ -10,8 +10,8 @@ Set::Set ()
 
 //Insert
 void Set::insert (int x){
-    if(empty()){
-        head->next = head->insert(x);
+    if(empty()){ // Check if set is empty
+        head->next = head->insert(x); // If it is, insert x after dummy node
     }
     else {
         Node* temp = head;
@@ -70,9 +70,10 @@ Set::Set (const Set &source)
 //Destructor: deallocate all nodes
 Set::~Set ()
 {
-    for (Node* temp = head; temp; temp = temp->next) {
-        head = head->next;
-        delete temp;
+    while (head) {
+        Node* temp = head->next;
+        delete head;
+        head = temp;
     }
     delete head;
 }
