@@ -31,7 +31,7 @@ void Set::insert (int x){
             }
         }
         
-        temp = temp->insert(x);
+        temp->insert(x);
     }
     
 }
