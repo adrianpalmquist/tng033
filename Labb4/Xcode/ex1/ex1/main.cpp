@@ -13,28 +13,33 @@
 #include <utility>
 #include <vector>
 #include <algorithm>
+#include <string>
 
 using namespace std;
 
+typedef pair<int, string> par;
+typedef vector<par> vecPar;
+typedef map<string, int> mp;
+
 
 //Jämför
-bool comp(pair<int,string> i, pair<int,string> j)
+bool comp(par i, par j)
 {
     return (i.first > j.first);
 }
 
 //Skriv ut
-void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter)
+void print(vecPar &par_vec, mp &word, int counter)
 {
-    map<string,int>::iterator it;
+    mp::iterator it;
     
-    vector<pair<int,string>>::iterator it_vec;
+    vecPar::iterator it_vec;
     
     for(it = word.begin();it!=word.end();it++)
     {
         cout << it->first << ": " << it->second<<endl;
         
-        pair <int,string> p (it->second,it->first);
+        par p (it->second,it->first);
         
         par_vec.push_back(p);
     }
@@ -51,14 +56,16 @@ void print(vector<pair<int,string>> &par_vec, map<string,int> &word, int counter
     //cout << endl << endl << "counter: " << counter << endl;
 }
 
+
 //Läs in
-int read(map<string,int> &word)
+int read(mp &word)
 {
     string file_name;
     string s;
     string temp;
     
     int counter=0;
+    int stringCounter = 0;
     
     cout << "Enter file name: ";
     cin >> file_name;
@@ -77,8 +84,25 @@ int read(map<string,int> &word)
     
     istream_iterator<string> in_it(infil);
     istream_iterator<string> in_end;
+    mp::iterator it;
+    //string::iterator sIt = s.begin();
     
-    copy(in_it, in_end, inserter(word,word.begin()));
+    //copy(in_it, in_end, inserter(word,it));
+    
+    while (infil>>s) {
+        
+        s.resize(remove_if(s.begin(), s.end(),[](char x){return !isalnum(x) && !isspace(x);})-s.begin());
+        transform(s.begin(), s.end(), s.begin(), ::tolower);
+        
+        it = word.find(s);
+        
+        if (it != word.end())
+        word[s] = it->second++;
+        else
+        word[s] = 1;
+        
+        counter++;
+    }
     
     
     /*
@@ -119,8 +143,8 @@ int read(map<string,int> &word)
 
 int main()
 {
-    map<string,int> word;
-    vector<pair<int,string> > par_vec;
+    mp word;
+    vecPar par_vec;
     
     print(par_vec, word, read(word));
     
