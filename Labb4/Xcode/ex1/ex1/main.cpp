@@ -84,9 +84,6 @@ int read(mp &word)
     
     ifstream infil(file_name);
     
-
-    
-    
     if (!infil.is_open())
     {
         cout << "Failed to open " << file_name << endl;
@@ -96,9 +93,6 @@ int read(mp &word)
     istream_iterator<string> in_it(infil);
     istream_iterator<string> in_end;
     mp::iterator it;
-    //string::iterator sIt = s.begin();
-    
-    //copy(in_it, in_end, inserter(word,it));
     
     while (infil>>s) {
         
@@ -119,37 +113,6 @@ int read(mp &word)
         counter++;
         s = "";
     }
-    
-    
-    /*
-    
-    while(infil>>s)
-    {
-        for(int j = 0;j<s.size();j++)//testa varje element
-        {
-            if((('a'<=s[j]) && (s[j]<= 'z')) || (s[j]=='\x27') || (s[j]=='\x60')) temp+=s[j];
-            
-            if(('A'<=s[j]) && (s[j]<= 'Z')) temp+=s[j]+('a'-'A');
-        }
-        
-        it = word.find(temp); //kolla om temp finns
-        
-        if(it != word.end())
-        {
-            word[temp]=it->second++;
-        }
-        
-        else
-        {
-            word[temp]=1;
-        }
-        
-        counter++;
-        temp = "";
-    }
-     */
-    
-    
     
     infil.close();
     return counter;
