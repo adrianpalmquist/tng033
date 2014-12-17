@@ -31,14 +31,15 @@ bool comp(par i, par j)
 //Skriv ut
 void print(vecPar &par_vec, mp &word, int counter)
 {
-    map<string,int>::iterator it;
+    mp::iterator it;
     
-    vector<pair<int,string>>::iterator it_vec;
+    vecPar::iterator it_vec;
     
     cout << "Sortering i bokstavsordning" << endl;
     
     cout << endl;
     
+    /*
     for(it = word.begin(); it!=word.end(); it++)
     {
         cout << left << setw(10) << it->first << right << setw(60) << it->second<<endl;
@@ -51,6 +52,7 @@ void print(vecPar &par_vec, mp &word, int counter)
         
         par_vec.push_back(p);
     }
+     */
     
     cout << endl;
     
@@ -58,11 +60,12 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
     
-    
+    /*
     for(it_vec=par_vec.begin(); it_vec != par_vec.end(); it_vec++) //Skriv
     {
         cout << left << setw(10) << it_vec->second << right << setw(60)<< it_vec->first <<endl;
     }
+     */
     
     
     cout << endl << endl << "counter: " << counter << endl;
