@@ -28,6 +28,13 @@ bool comp(par i, par j)
     return (i.first > j.first);
 }
 
+void printPair(const par &p)
+{
+    cout << "Word: " << p.first << endl;
+    cout << "Num: " << p.second << endl;
+}
+
+
 //Skriv ut
 void print(vecPar &par_vec, mp &word, int counter)
 {
@@ -53,6 +60,10 @@ void print(vecPar &par_vec, mp &word, int counter)
         par_vec.push_back(p);
     }
      */
+    
+    for_each(word.begin(), word.end(), printPair);
+    
+    
     
     cout << endl;
     
