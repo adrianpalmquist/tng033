@@ -1,0 +1,731 @@
+﻿Dr. Memory version 1.8.0 build 8 built on Sep  9 2014 16:27:02
+Dr. Memory results for pid 17332: "test i codeblocks.exe"
+Application cmdline: ""C:\Users\Oscar\Desktop\Labb2\test i codeblocks\bin\Debug\test i codeblocks.exe""
+Recorded 108 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin\suppress-default.txt
+
+Error #1: UNADDRESSABLE ACCESS of freed memory: reading 0x00e17c84-0x00e17c88 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator+               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:227]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:74]
+Note: @0:00:00.672 in thread 13872
+Note: next higher malloc: 0x00e17ca8-0x00e17cb0
+Note: prev lower malloc:  0x00e17c58-0x00e17c60
+Note: 0x00e17c84-0x00e17c88 overlaps memory 0x00e17c80-0x00e17c88 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator+                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:227]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:74]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #2: UNADDRESSABLE ACCESS of freed memory: reading 0x00e17be4-0x00e17be8 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator+               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:227]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:74]
+Note: @0:00:00.750 in thread 13872
+Note: next higher malloc: 0x00e17c08-0x00e17c10
+Note: prev lower malloc:  0x00e17bb8-0x00e17bc0
+Note: 0x00e17be4-0x00e17be8 overlaps memory 0x00e17be0-0x00e17be8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator+                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:227]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:74]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #3: UNADDRESSABLE ACCESS of freed memory: reading 0x00e17d24-0x00e17d28 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:74]
+Note: @0:00:00.750 in thread 13872
+Note: next higher malloc: 0x00e17d48-0x00e17d50
+Note: prev lower malloc:  0x00e17bb8-0x00e17bc0
+Note: 0x00e17d24-0x00e17d28 overlaps memory 0x00e17d20-0x00e17d28 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:74]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #4: UNADDRESSABLE ACCESS of freed memory: reading 0x00e17fa4-0x00e17fa8 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator*               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:248]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:75]
+Note: @0:00:00.750 in thread 13872
+Note: next higher malloc: 0x00e17fc8-0x00e17fd0
+Note: prev lower malloc:  0x00e17f78-0x00e17f80
+Note: 0x00e17fa4-0x00e17fa8 overlaps memory 0x00e17fa0-0x00e17fa8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator*                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:248]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:75]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #5: UNADDRESSABLE ACCESS of freed memory: reading 0x00e17f04-0x00e17f08 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator*               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:248]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:75]
+Note: @0:00:00.750 in thread 13872
+Note: next higher malloc: 0x00e17f28-0x00e17f30
+Note: prev lower malloc:  0x00e17ed8-0x00e17ee0
+Note: 0x00e17f04-0x00e17f08 overlaps memory 0x00e17f00-0x00e17f08 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator*                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:248]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:75]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #6: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18044-0x00e18048 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:75]
+Note: @0:00:00.750 in thread 13872
+Note: next higher malloc: 0x00e18068-0x00e18070
+Note: prev lower malloc:  0x00e17ed8-0x00e17ee0
+Note: 0x00e18044-0x00e18048 overlaps memory 0x00e18040-0x00e18048 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:75]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #7: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18184-0x00e18188 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator-               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:270]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:76]
+Note: @0:00:00.750 in thread 13872
+Note: next higher malloc: 0x00e181a8-0x00e181b0
+Note: prev lower malloc:  0x00e18158-0x00e18160
+Note: 0x00e18184-0x00e18188 overlaps memory 0x00e18180-0x00e18188 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator-                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:270]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:76]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #8: UNADDRESSABLE ACCESS of freed memory: reading 0x00e180e4-0x00e180e8 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator-               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:270]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:76]
+Note: @0:00:00.750 in thread 13872
+Note: next higher malloc: 0x00e18108-0x00e18110
+Note: prev lower malloc:  0x00e180b8-0x00e180c0
+Note: 0x00e180e4-0x00e180e8 overlaps memory 0x00e180e0-0x00e180e8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator-                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:270]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:76]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #9: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18224-0x00e18228 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:76]
+Note: @0:00:00.781 in thread 13872
+Note: next higher malloc: 0x00e18248-0x00e18250
+Note: prev lower malloc:  0x00e180b8-0x00e180c0
+Note: 0x00e18224-0x00e18228 overlaps memory 0x00e18220-0x00e18228 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:76]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #10: UNADDRESSABLE ACCESS of freed memory: reading 0x00e184a4-0x00e184a8 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 Set::operator==               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:151]
+# 3 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:88]
+Note: @0:00:00.828 in thread 13872
+Note: next higher malloc: 0x00e184c8-0x00e184d0
+Note: prev lower malloc:  0x00e18478-0x00e18480
+Note: 0x00e184a4-0x00e184a8 overlaps memory 0x00e184a0-0x00e184a8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 Set::operator==                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:151]
+Note: # 4 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:88]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #11: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18594-0x00e18598 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 Set::operator==               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:151]
+# 3 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:88]
+Note: @0:00:00.828 in thread 13872
+Note: next higher malloc: 0x00e185b8-0x00e185c0
+Note: prev lower malloc:  0x00e18478-0x00e18480
+Note: 0x00e18594-0x00e18598 overlaps memory 0x00e18590-0x00e18598 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 Set::operator==                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:151]
+Note: # 4 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:88]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #12: UNADDRESSABLE ACCESS of freed memory: reading 0x00e183b4-0x00e183b8 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator==               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:154]
+# 2 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:88]
+Note: @0:00:00.828 in thread 13872
+Note: next higher malloc: 0x00e183d8-0x00e183e0
+Note: prev lower malloc:  0x00e18388-0x00e18390
+Note: 0x00e183b4-0x00e183b8 overlaps memory 0x00e183b0-0x00e183b8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator==                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:154]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:88]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #13: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18314-0x00e18318 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator==               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:154]
+# 2 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:88]
+Note: @0:00:00.828 in thread 13872
+Note: next higher malloc: 0x00e18338-0x00e18340
+Note: prev lower malloc:  0x00e182e8-0x00e182f0
+Note: 0x00e18314-0x00e18318 overlaps memory 0x00e18310-0x00e18318 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator==                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:154]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:88]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #14: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18634-0x00e18638 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:89]
+Note: @0:00:00.875 in thread 13872
+Note: next higher malloc: 0x00e18658-0x00e18660
+Note: prev lower malloc:  0x00e182e8-0x00e182f0
+Note: 0x00e18634-0x00e18638 overlaps memory 0x00e18630-0x00e18638 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:89]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #15: UNADDRESSABLE ACCESS of freed memory: reading 0x00e188b4-0x00e188b8 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 Set::operator<                [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:164]
+# 3 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:90]
+Note: @0:00:00.875 in thread 13872
+Note: next higher malloc: 0x00e188d8-0x00e188e0
+Note: prev lower malloc:  0x00e18888-0x00e18890
+Note: 0x00e188b4-0x00e188b8 overlaps memory 0x00e188b0-0x00e188b8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 Set::operator<                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:164]
+Note: # 4 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:90]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #16: UNADDRESSABLE ACCESS of freed memory: reading 0x00e189a4-0x00e189a8 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 Set::operator<                [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:164]
+# 3 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:90]
+Note: @0:00:00.875 in thread 13872
+Note: next higher malloc: 0x00e189c8-0x00e189d0
+Note: prev lower malloc:  0x00e18888-0x00e18890
+Note: 0x00e189a4-0x00e189a8 overlaps memory 0x00e189a0-0x00e189a8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 Set::operator<                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:164]
+Note: # 4 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:90]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #17: UNADDRESSABLE ACCESS of freed memory: reading 0x00e187c4-0x00e187c8 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:168]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:90]
+Note: @0:00:00.875 in thread 13872
+Note: next higher malloc: 0x00e187e8-0x00e187f0
+Note: prev lower malloc:  0x00e18798-0x00e187a0
+Note: 0x00e187c4-0x00e187c8 overlaps memory 0x00e187c0-0x00e187c8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:168]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:90]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #18: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18724-0x00e18728 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:168]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:90]
+Note: @0:00:00.875 in thread 13872
+Note: next higher malloc: 0x00e18748-0x00e18750
+Note: prev lower malloc:  0x00e182e8-0x00e182f0
+Note: 0x00e18724-0x00e18728 overlaps memory 0x00e18720-0x00e18728 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:168]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:90]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #19: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18a44-0x00e18a48 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator+               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:298]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: @0:00:00.890 in thread 13872
+Note: next higher malloc: 0x00e18a68-0x00e18a70
+Note: prev lower malloc:  0x00e182e8-0x00e182f0
+Note: 0x00e18a44-0x00e18a48 overlaps memory 0x00e18a40-0x00e18a48 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator+                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:298]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #20: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18bac-0x00e18bb0 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator-               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:326]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: @0:00:00.890 in thread 13872
+Note: next higher malloc: 0x00e18bd0-0x00e18bd8
+Note: prev lower malloc:  0x00e18b80-0x00e18b88
+Note: 0x00e18bac-0x00e18bb0 overlaps memory 0x00e18ba8-0x00e18bb0 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator-                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:326]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #21: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18d3c-0x00e18d40 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator-               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:326]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: @0:00:00.890 in thread 13872
+Note: next higher malloc: 0x00e18d60-0x00e18d68
+Note: prev lower malloc:  0x00e18d10-0x00e18d18
+Note: 0x00e18d3c-0x00e18d40 overlaps memory 0x00e18d38-0x00e18d40 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator-                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:326]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #22: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18ddc-0x00e18de0 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: @0:00:00.890 in thread 13872
+Note: next higher malloc: 0x00e18e00-0x00e18e08
+Note: prev lower malloc:  0x00e18d10-0x00e18d18
+Note: 0x00e18ddc-0x00e18de0 overlaps memory 0x00e18dd8-0x00e18de0 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #23: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18c74-0x00e18c78 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: @0:00:00.890 in thread 13872
+Note: next higher malloc: 0x00e18c98-0x00e18ca0
+Note: prev lower malloc:  0x00e18b80-0x00e18b88
+Note: 0x00e18c74-0x00e18c78 overlaps memory 0x00e18c70-0x00e18c78 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #24: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18ae4-0x00e18ae8 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: @0:00:00.890 in thread 13872
+Note: next higher malloc: 0x00e18b08-0x00e18b10
+Note: prev lower malloc:  0x00e182e8-0x00e182f0
+Note: 0x00e18ae4-0x00e18ae8 overlaps memory 0x00e18ae0-0x00e18ae8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #25: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18f1c-0x00e18f20 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator-               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:326]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: @0:00:00.890 in thread 13872
+Note: next higher malloc: 0x00e18f40-0x00e18f48
+Note: prev lower malloc:  0x00e18ef0-0x00e18ef8
+Note: 0x00e18f1c-0x00e18f20 overlaps memory 0x00e18f18-0x00e18f20 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator-                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:326]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #26: UNADDRESSABLE ACCESS of freed memory: reading 0x00e1905c-0x00e19060 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator+               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:298]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: @0:00:00.906 in thread 13872
+Note: next higher malloc: 0x00e19080-0x00e19088
+Note: prev lower malloc:  0x00e19030-0x00e19038
+Note: 0x00e1905c-0x00e19060 overlaps memory 0x00e19058-0x00e19060 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator+                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:298]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #27: UNADDRESSABLE ACCESS of freed memory: reading 0x00e19174-0x00e19178 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator-               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:326]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: @0:00:00.984 in thread 13872
+Note: next higher malloc: 0x00e19198-0x00e191a0
+Note: prev lower malloc:  0x00e19148-0x00e19150
+Note: 0x00e19174-0x00e19178 overlaps memory 0x00e19170-0x00e19178 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator-                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:326]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #28: UNADDRESSABLE ACCESS of freed memory: reading 0x00e19214-0x00e19218 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: @0:00:00.984 in thread 13872
+Note: next higher malloc: 0x00e19238-0x00e19240
+Note: prev lower malloc:  0x00e19148-0x00e19150
+Note: 0x00e19214-0x00e19218 overlaps memory 0x00e19210-0x00e19218 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #29: UNADDRESSABLE ACCESS of freed memory: reading 0x00e190d4-0x00e190d8 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: @0:00:00.984 in thread 13872
+Note: next higher malloc: 0x00e190f8-0x00e19100
+Note: prev lower malloc:  0x00e19030-0x00e19038
+Note: 0x00e190d4-0x00e190d8 overlaps memory 0x00e190d0-0x00e190d8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #30: UNADDRESSABLE ACCESS of freed memory: reading 0x00e18fbc-0x00e18fc0 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: @0:00:00.984 in thread 13872
+Note: next higher malloc: 0x00e18fe0-0x00e18fe8
+Note: prev lower malloc:  0x00e18ef0-0x00e18ef8
+Note: 0x00e18fbc-0x00e18fc0 overlaps memory 0x00e18fb8-0x00e18fc0 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #31: UNADDRESSABLE ACCESS of freed memory: reading 0x00e19494-0x00e19498 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 Set::operator==               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:151]
+# 3 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:110]
+Note: @0:00:01.125 in thread 13872
+Note: next higher malloc: 0x00e194b8-0x00e194c0
+Note: prev lower malloc:  0x00e19468-0x00e19470
+Note: 0x00e19494-0x00e19498 overlaps memory 0x00e19490-0x00e19498 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 Set::operator==                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:151]
+Note: # 4 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:110]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #32: UNADDRESSABLE ACCESS of freed memory: reading 0x00e19534-0x00e19538 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 Set::operator==               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:151]
+# 3 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:110]
+Note: @0:00:01.125 in thread 13872
+Note: next higher malloc: 0x00e19558-0x00e19560
+Note: prev lower malloc:  0x00e19468-0x00e19470
+Note: 0x00e19534-0x00e19538 overlaps memory 0x00e19530-0x00e19538 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 Set::operator==                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:151]
+Note: # 4 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:110]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #33: UNADDRESSABLE ACCESS of freed memory: reading 0x00e193f4-0x00e193f8 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator==               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:154]
+# 2 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:110]
+Note: @0:00:01.125 in thread 13872
+Note: next higher malloc: 0x00e19418-0x00e19420
+Note: prev lower malloc:  0x00e193c8-0x00e193d0
+Note: 0x00e193f4-0x00e193f8 overlaps memory 0x00e193f0-0x00e193f8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator==                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:154]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:110]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #34: UNADDRESSABLE ACCESS of freed memory: reading 0x00e19354-0x00e19358 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator==               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:154]
+# 2 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:110]
+Note: @0:00:01.125 in thread 13872
+Note: next higher malloc: 0x00e19378-0x00e19380
+Note: prev lower malloc:  0x00e19328-0x00e19330
+Note: 0x00e19354-0x00e19358 overlaps memory 0x00e19350-0x00e19358 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator==                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:154]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:110]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #35: UNADDRESSABLE ACCESS of freed memory: reading 0x00e195d4-0x00e195d8 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:111]
+Note: @0:00:01.125 in thread 13872
+Note: next higher malloc: 0x00e195f8-0x00e19600
+Note: prev lower malloc:  0x00e19328-0x00e19330
+Note: 0x00e195d4-0x00e195d8 overlaps memory 0x00e195d0-0x00e195d8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:111]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #36: UNADDRESSABLE ACCESS of freed memory: reading 0x00e197b4-0x00e197b8 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 Set::operator<                [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:164]
+# 3 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:112]
+Note: @0:00:01.250 in thread 13872
+Note: next higher malloc: 0x00e197d8-0x00e197e0
+Note: prev lower malloc:  0x00e19788-0x00e19790
+Note: 0x00e197b4-0x00e197b8 overlaps memory 0x00e197b0-0x00e197b8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 Set::operator<                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:164]
+Note: # 4 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:112]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #37: UNADDRESSABLE ACCESS of freed memory: reading 0x00e19854-0x00e19858 4 byte(s)
+# 0 Set::~Set                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<=               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+# 2 Set::operator<                [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:164]
+# 3 main                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:112]
+Note: @0:00:01.250 in thread 13872
+Note: next higher malloc: 0x00e19878-0x00e19880
+Note: prev lower malloc:  0x00e19788-0x00e19790
+Note: 0x00e19854-0x00e19858 overlaps memory 0x00e19850-0x00e19858 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<=                       [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:142]
+Note: # 3 Set::operator<                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:164]
+Note: # 4 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:112]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #38: UNADDRESSABLE ACCESS of freed memory: reading 0x00e19714-0x00e19718 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:168]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:112]
+Note: @0:00:01.250 in thread 13872
+Note: next higher malloc: 0x00e19738-0x00e19740
+Note: prev lower malloc:  0x00e196e8-0x00e196f0
+Note: 0x00e19714-0x00e19718 overlaps memory 0x00e19710-0x00e19718 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:168]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:112]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #39: UNADDRESSABLE ACCESS of freed memory: reading 0x00e19674-0x00e19678 4 byte(s)
+# 0 Set::~Set                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 Set::operator<               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:168]
+# 2 main                         [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:112]
+Note: @0:00:01.250 in thread 13872
+Note: next higher malloc: 0x00e19698-0x00e196a0
+Note: prev lower malloc:  0x00e19328-0x00e19330
+Note: 0x00e19674-0x00e19678 overlaps memory 0x00e19670-0x00e19678 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 Set::operator<                        [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:168]
+Note: # 3 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:112]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #40: UNADDRESSABLE ACCESS of freed memory: reading 0x00e192b4-0x00e192b8 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: @0:00:01.281 in thread 13872
+Note: next higher malloc: 0x00e192d8-0x00e192e0
+Note: prev lower malloc:  0x00e18fe0-0x00e18fe8
+Note: 0x00e192b4-0x00e192b8 overlaps memory 0x00e192b0-0x00e192b8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #41: UNADDRESSABLE ACCESS of freed memory: reading 0x00e198f4-0x00e198f8 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: @0:00:01.281 in thread 13872
+Note: next higher malloc: 0x00e19918-0x00e19920
+Note: prev lower malloc:  0x00e18fe0-0x00e18fe8
+Note: 0x00e198f4-0x00e198f8 overlaps memory 0x00e198f0-0x00e198f8 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #42: UNADDRESSABLE ACCESS of freed memory: reading 0x00e17e14-0x00e17e18 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: @0:00:01.281 in thread 13872
+Note: next higher malloc: 0x00e17e38-0x00e17e40
+Note: prev lower malloc:  0x00e17bb8-0x00e17bc0
+Note: 0x00e17e14-0x00e17e18 overlaps memory 0x00e17e10-0x00e17e18 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #43: UNADDRESSABLE ACCESS of freed memory: reading 0x00e17914-0x00e17918 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: @0:00:01.281 in thread 13872
+Note: next higher malloc: 0x00e17938-0x00e17940
+Note: prev lower malloc:  0x00e178e8-0x00e178f0
+Note: 0x00e17914-0x00e17918 overlaps memory 0x00e17910-0x00e17918 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #44: UNADDRESSABLE ACCESS of freed memory: reading 0x00e17874-0x00e17878 4 byte(s)
+# 0 Set::~Set               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:73]
+# 1 main                    [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: @0:00:01.281 in thread 13872
+Note: next higher malloc: 0x00e17898-0x00e178a0
+Note: prev lower malloc:  0x00e17638-0x00e1784c
+Note: 0x00e17874-0x00e17878 overlaps memory 0x00e17870-0x00e17878 that was freed here:
+Note: # 0 replace_operator_delete               [d:\drmemory_package\common\alloc_replace.c:2684]
+Note: # 1 Set::~Set                             [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:75]
+Note: # 2 main                                  [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:124]
+Note: instruction: mov    0x04(%eax) -> %eax
+
+Error #45: UNINITIALIZED READ: reading 0x0028feb0-0x0028febc 12 byte(s) within 0x0028fe9c-0x0028febc
+# 0 system call NtWriteFile parameter #5
+# 1 KERNELBASE.dll!WriteFile                          +0x5b     (0x7733d34a <KERNELBASE.dll+0xd34a>)
+# 2 msvcrt.dll!_write_nolock
+# 3 msvcrt.dll!_write    
+# 4 _mcleanup                                          [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:366]
+# 5 msvcrt.dll!_unlockexit
+# 6 msvcrt.dll!_cexit    
+# 7 ntdll.dll!RtlInitializeExceptionChain             +0x83     (0x778b0bbb <ntdll.dll+0x50bbb>)
+# 8 ntdll.dll!RtlInitializeExceptionChain             +0x59     (0x778b0b91 <ntdll.dll+0x50b91>)
+Note: @0:00:01.344 in thread 13872
+
+Error #46: LEAK 8 direct bytes 0x00e17a28-0x00e17a30 + 16 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Set::Set                           [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:63]
+# 2 main                               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:38]
+
+Error #47: LEAK 8 direct bytes 0x00e17ac8-0x00e17ad0 + 16 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Set::operator=                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:339]
+# 2 main                               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:48]
+
+Error #48: LEAK 8 direct bytes 0x00e17b68-0x00e17b70 + 16 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Set::operator=                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:339]
+# 2 main                               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:48]
+
+Error #49: LEAK 8 direct bytes 0x00e180b8-0x00e180c0 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Set::operator=                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:339]
+# 2 main                               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:75]
+
+Error #50: LEAK 8 direct bytes 0x00e182c0-0x00e182c8 + 8 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Set::operator=                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:339]
+# 2 main                               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:76]
+
+Error #51: LEAK 8 direct bytes 0x00e18d10-0x00e18d18 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Set::Set                           [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:63]
+# 2 Set::operator-                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:305]
+# 3 main                               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+
+Error #52: LEAK 8 direct bytes 0x00e18ea0-0x00e18ea8 + 16 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Set::operator=                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:339]
+# 2 main                               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:98]
+
+Error #53: LEAK 8 direct bytes 0x00e18fe0-0x00e18fe8 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Set::Set                           [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:63]
+# 2 Set::operator-                     [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/set.cpp:305]
+# 3 main                               [C:/Users/Oscar/Desktop/Labb2/Xcode/ex/ex/main.cpp:99]
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:      4
+	Error #   2:      4
+	Error #   3:      6
+	Error #   4:      4
+	Error #   5:      4
+	Error #   6:      2
+	Error #   7:      4
+	Error #   8:      4
+	Error #   9:      3
+	Error #  10:      6
+	Error #  11:      4
+	Error #  12:      6
+	Error #  13:      4
+	Error #  14:      6
+	Error #  15:      6
+	Error #  16:      4
+	Error #  17:      6
+	Error #  18:      4
+	Error #  19:      4
+	Error #  20:      5
+	Error #  21:      4
+	Error #  22:      4
+	Error #  23:      4
+	Error #  24:      5
+	Error #  25:      4
+	Error #  26:      3
+	Error #  27:      4
+	Error #  28:      4
+	Error #  29:      4
+	Error #  30:      3
+	Error #  31:      4
+	Error #  32:      4
+	Error #  33:      4
+	Error #  34:      4
+	Error #  35:      4
+	Error #  36:      4
+	Error #  37:      4
+	Error #  38:      4
+	Error #  39:      4
+	Error #  40:      4
+	Error #  41:      6
+	Error #  42:      6
+	Error #  43:      4
+	Error #  44:      4
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+     44 unique,   189 total unaddressable access(es)
+      1 unique,     1 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      8 unique,     8 total,    136 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      1 potential error(s) (suspected false positives)
+         (details: C:\Users\Oscar\AppData\Roaming\Dr. Memory\DrMemory-test i codeblocks.exe.17332.000\potential_errors.txt)
+      1 potential leak(s) (suspected false positives)
+         (details: C:\Users\Oscar\AppData\Roaming\Dr. Memory\DrMemory-test i codeblocks.exe.17332.000\potential_errors.txt)
+      1 unique,     1 total, 550884 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\Oscar\AppData\Roaming\Dr. Memory\DrMemory-test i codeblocks.exe.17332.000\results.txt
