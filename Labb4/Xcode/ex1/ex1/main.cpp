@@ -31,29 +31,41 @@ bool comp(par i, par j)
 //Skriv ut
 void print(vecPar &par_vec, mp &word, int counter)
 {
-    mp::iterator it;
+    map<string,int>::iterator it;
     
-    vecPar::iterator it_vec;
+    vector<pair<int,string>>::iterator it_vec;
     
-    for(it = word.begin();it!=word.end();it++)
+    cout << "Sortering i bokstavsordning" << endl;
+    
+    cout << endl;
+    
+    for(it = word.begin(); it!=word.end(); it++)
     {
-        cout << it->first << ": " << it->second<<endl;
+        cout << left << setw(10) << it->first << right << setw(60) << it->second<<endl;
         
-        par p (it->second,it->first);
+        //cout << "Key: " << it->first << endl << "Values:" << endl;
+        
+        //cout << it_vec->first << " " << it_vec->second<<endl;
+        
+        pair <int,string> p (it->second,it->first);
         
         par_vec.push_back(p);
     }
     
     cout << endl;
     
+    cout << "Sortering efter antal ord i texten" << endl;
+    
     sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
     
-    for(it_vec=par_vec.begin();it_vec != par_vec.end();it_vec++) //Skriv
+    
+    for(it_vec=par_vec.begin(); it_vec != par_vec.end(); it_vec++) //Skriv
     {
-        cout << it_vec->first << it_vec->second<<endl;
+        cout << left << setw(10) << it_vec->second << right << setw(60)<< it_vec->first <<endl;
     }
     
-    //cout << endl << endl << "counter: " << counter << endl;
+    
+    cout << endl << endl << "counter: " << counter << endl;
 }
 
 
@@ -65,7 +77,6 @@ int read(mp &word)
     string temp;
     
     int counter=0;
-    int stringCounter = 0;
     
     cout << "Enter file name: ";
     cin >> file_name;
@@ -96,12 +107,15 @@ int read(mp &word)
         
         it = word.find(s);
         
-        if (it != word.end())
+        if (it != word.end()) {
         word[s] = it->second++;
-        else
+        }
+        else {
         word[s] = 1;
+        }
         
         counter++;
+        s = "";
     }
     
     
