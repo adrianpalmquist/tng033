@@ -107,11 +107,13 @@ int read(mp &word)
         
         it = word.find(s);
         
-        if (it != word.end()) {
-        word[s] = it->second++;
+        if (it != word.end())
+        {
+            word[s] = it->second + 1;
         }
-        else {
-        word[s] = 1;
+        else
+        {
+            word[s]++;
         }
         
         counter++;
