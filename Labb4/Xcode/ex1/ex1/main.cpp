@@ -12,8 +12,11 @@
 #include <fstream>
 #include <utility>
 #include <vector>
-#include <algorithm>
 #include <string>
+
+//Windows
+#include <algorithm>
+#include <iterator>
 
 using namespace std;
 

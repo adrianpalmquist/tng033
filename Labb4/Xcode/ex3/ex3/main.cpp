@@ -5,6 +5,10 @@
 #include <map>
 #include <string>
 
+//Windows
+#include <algorithm>
+#include <iterator>
+
 using namespace std;
 
 typedef vector<string> vec;
