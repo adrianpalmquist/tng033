@@ -55,6 +55,7 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     
     cout << endl << endl << "Counter: " << counter << endl;
+    cout << "Number of unique words: " << word.size() << endl;
 }
 
 
