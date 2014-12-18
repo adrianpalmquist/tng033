@@ -14,11 +14,11 @@
 		<string>https://github.com/adrianpalmquist/tng033.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Labb4/ex2/ex2.xcodeproj</string>
+	<string>Labb4/Xcode/ex2/ex2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1F639AEF7151C4FBFC24A79415452411FCB5FE49</key>
-		<string>../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/adrianpalmquist/tng033.git</string>

@@ -28,10 +28,10 @@ bool comp(par i, par j)
     return (i.first > j.first);
 }
 
-void printPair(map<string, int>::iterator it)
+void printMap(map<string, int>::iterator it)
 {
-    cout << "Word: " << it->first << endl;
-    cout << "Num: " << it->second << endl;
+    cout << it->first << ": ";
+    cout << it->second << endl;
 }
 
 
@@ -42,51 +42,31 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     vecPar::iterator it_vec;
     
-    cout << "Sortering i bokstavsordning" << endl;
-    
-    cout << endl;
-    
-    /*
-    for(it = word.begin(); it!=word.end(); it++)
-    {
-        cout << left << setw(10) << it->first << right << setw(60) << it->second<<endl;
-        
-        //cout << "Key: " << it->first << endl << "Values:" << endl;
-        
-        //cout << it_vec->first << " " << it_vec->second<<endl;
-        
-        pair <int,string> p (it->second,it->first);
-        
-        par_vec.push_back(p);
-    }
-    */
-    
-    
-    map<string,int>::iterator it_begin = word.begin();
-    map<string,int>::iterator it_end = word.end();
-    
+    cout << "Sortering i bokstavsordning:" << endl << endl;
     
     //for_each(it_begin, it_end, printPair);
     
-    for (map<string,int>::iterator it = word.begin(); it != word.end(); it++)
-    printPair(it);
-    
+    for (it = word.begin(); it != word.end(); it++){
+    printMap(it);
+    pair <int,string> p (it->second,it->first);
+    par_vec.push_back(p);
+    }
     
     cout << endl;
     
-    cout << "Sortering efter antal ord i texten" << endl;
+    cout << "Sortering efter antal ord i texten:" << endl;
     
-    sort(par_vec.begin(),par_vec.end(), comp);//sorterar vektor
+    sort(par_vec.begin(),par_vec.end(), comp);
     
-    /*
-    for(it_vec=par_vec.begin(); it_vec != par_vec.end(); it_vec++) //Skriv
+    
+    for(it_vec=par_vec.begin(); it_vec != par_vec.end(); it_vec++)
     {
-        cout << left << setw(10) << it_vec->second << right << setw(60)<< it_vec->first <<endl;
+        cout << it_vec->second << ": " << it_vec->first << endl;
     }
-     */
     
     
-    cout << endl << endl << "counter: " << counter << endl;
+    
+    cout << endl << endl << "Counter: " << counter << endl;
 }
 
 
@@ -117,7 +97,7 @@ int read(mp &word)
     
     while (infil>>s) {
         
-        s.resize(remove_if(s.begin(), s.end(),[](char x){return !isalnum(x) && !isspace(x);})-s.begin());
+        s.resize(remove_if(s.begin(), s.end(),[](char x){return !isalnum(x) && !isspace(x);})-s.begin()); //Check if character is alphanumeric
         transform(s.begin(), s.end(), s.begin(), ::tolower);
         
         it = word.find(s);
