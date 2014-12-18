@@ -28,10 +28,10 @@ bool comp(par i, par j)
     return (i.first > j.first);
 }
 
-void printPair(pair<int, string> &p)
+void printPair(map<string, int>::iterator it)
 {
-    cout << "Word: " << p.first << endl;
-    cout << "Num: " << p.second << endl;
+    cout << "Word: " << it->first << endl;
+    cout << "Num: " << it->second << endl;
 }
 
 
@@ -61,8 +61,15 @@ void print(vecPar &par_vec, mp &word, int counter)
     }
     */
     
-    for_each(word.begin(), word.end(), printPair);
     
+    map<string,int>::iterator it_begin = word.begin();
+    map<string,int>::iterator it_end = word.end();
+    
+    
+    //for_each(it_begin, it_end, printPair);
+    
+    for (map<string,int>::iterator it = word.begin(); it != word.end(); it++)
+    printPair(it);
     
     
     cout << endl;
