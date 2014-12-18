@@ -28,10 +28,12 @@ bool comp(par i, par j)
     return (i.first > j.first);
 }
 
-void printMap(map<string, int>::iterator it)
+void printMap(pair<string,int> p)
 {
-    cout << it->first << ": ";
-    cout << it->second << endl;
+    cout << p.first << ": ";
+    cout << p.second << endl;
+    pair <int,string> pr (p.second,p.first);
+    //par_vec.push_back(pr);
 }
 
 
@@ -44,13 +46,19 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     cout << "Sortering i bokstavsordning:" << endl << endl;
     
-    //for_each(word.begin(), word.end(), printMap);
+    for_each(word.begin(), word.end(), [](pair<string, int> p) {cout << p.first << ": " << p.second << endl;});
     
+    
+    /*
     for (it = word.begin(); it != word.end(); it++){
     printMap(it);
     pair <int,string> p (it->second,it->first);
     par_vec.push_back(p);
     }
+    */
+    
+    
+    
     
     cout << endl;
     
