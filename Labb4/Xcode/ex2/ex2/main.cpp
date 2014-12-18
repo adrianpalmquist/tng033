@@ -10,14 +10,6 @@ using namespace std;
 typedef vector<string> vec;
 typedef map<string,vec> mp;
 
-bool is_anagram(string s1, string s2)
-{
-    sort(s1.begin(), s1.end());
-    sort(s2.begin(), s2.end());
-    return s1 == s2;
-}
-
-
 void printMap(map<string,vector<string>>::iterator it, ostream_iterator<string> &outIt)
 {
     copy(it->second.begin(), it->second.end(), outIt);
