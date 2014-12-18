@@ -44,7 +44,7 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     cout << "Sortering i bokstavsordning:" << endl << endl;
     
-    //for_each(it_begin, it_end, printPair);
+    //for_each(word.begin(), word.end(), printMap);
     
     for (it = word.begin(); it != word.end(); it++){
     printMap(it);

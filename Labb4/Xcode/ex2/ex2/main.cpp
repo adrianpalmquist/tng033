@@ -83,10 +83,13 @@ void print(mp &word, int counter){
     
     //for_each(it_begin, it_end, printPair);
     
-    ostream_iterator<string> outIt(cout, "\n");
+    ostream_iterator<string> outIt(cout, " ");
     
     for (it = word.begin(); it != word.end(); it++){
+        if (it->second.size() != 1){
         copy(it->second.begin(), it->second.end(), outIt);
+        cout << "   -->   "<< it->second.size() << " words." << endl;
+        }
     }
     
 }
