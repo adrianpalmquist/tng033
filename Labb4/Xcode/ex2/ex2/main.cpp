@@ -59,11 +59,10 @@ int read(mp &word){
         
         it = word.find(s);
         
-        if (it != word.end())
-        {
+       // if (it != word.end())
+        //{
             word[s].push_back(temp);
-        }
-        
+        //}
         
         counter++;
         s = "";
@@ -84,10 +83,10 @@ void print(mp &word, int counter){
     
     //for_each(it_begin, it_end, printPair);
     
-    ostream_iterator<string> outIt(cout, " ");
+    ostream_iterator<string> outIt(cout, "\n");
     
     for (it = word.begin(); it != word.end(); it++){
-        printMap(it, outIt);
+        copy(it->second.begin(), it->second.end(), outIt);
     }
     
 }
