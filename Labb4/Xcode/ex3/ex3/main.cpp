@@ -9,8 +9,12 @@ using namespace std;
 
 typedef vector<string> vec;
 typedef map<string,vec> mp;
+typedef pair<string, vec> par;
+typedef vector<par> vec_par;
+typedef ostream_iterator<string> os;
+typedef istream_iterator<string> is;
 
-void printMap(map<string,vector<string>>::iterator it, ostream_iterator<string> &outIt)
+void printMap(mp::iterator it, os &outIt)
 {
     copy(it->second.begin(), it->second.end(), outIt);
 }
@@ -36,8 +40,8 @@ int read(mp &word){
         return 0;
     }
     
-    istream_iterator<string> in_it(infil);
-    istream_iterator<string> in_end;
+    is in_it(infil);
+    is in_end;
     mp::iterator it;
     
     while (infil>>s) {
@@ -70,15 +74,15 @@ void print(mp &word, int counter){
     
     cout << "Number of words: " << counter << endl;
     
-    ostream_iterator<string> outIt(cout, " ");
+    os outIt(cout, " ");
     
     
-    vector<pair<string,vector<string>>> wordvec(word.begin(), word.end());
+    vec_par wordvec(word.begin(), word.end());
     
-    sort(wordvec.begin(), wordvec.end(), [](pair<string, vector<string>> p, pair<string, vector<string>> q) { return p.second.size()>q.second.size();
+    sort(wordvec.begin(), wordvec.end(), [](par p, par q) { return p.second.size()>q.second.size();
     });
     
-    for_each(wordvec.begin(), wordvec.end(), [outIt] (pair<string, vector<string>> p){
+    for_each(wordvec.begin(), wordvec.end(), [outIt] (par p){
         copy(p.second.begin(), p.second.end(), outIt);
         cout << "   -->   "<< p.second.size() << " words." << endl;
     });

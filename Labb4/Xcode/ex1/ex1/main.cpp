@@ -17,13 +17,14 @@
 
 using namespace std;
 
-typedef pair<int, string> par;
-typedef vector<par> vecPar;
+typedef pair<int, string> paris;
+typedef pair<string, int> parsi;
+typedef vector<paris> vecPar;
 typedef map<string, int> mp;
 
 
 //Jämför
-bool comp(par i, par j)
+bool comp(paris i, paris j)
 {
     return (i.first > j.first);
 }
@@ -37,8 +38,8 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     cout << "Sortering i bokstavsordning:" << endl << endl;
     
-    for_each(word.begin(), word.end(), [&par_vec](pair<string, int> p) {cout << p.first << ": " << p.second << endl;
-        pair <int,string> pr (p.second,p.first);
+    for_each(word.begin(), word.end(), [&par_vec](parsi p) {cout << p.first << ": " << p.second << endl;
+        paris pr (p.second,p.first);
         par_vec.push_back(pr);});
     
     
@@ -48,7 +49,7 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     sort(par_vec.begin(),par_vec.end(), comp);
     
-    for_each(par_vec.begin(), par_vec.end(), [](par p) {cout << p.second << ": " << p.first << endl;});
+    for_each(par_vec.begin(), par_vec.end(), [](paris p) {cout << p.second << ": " << p.first << endl;});
     
     
     

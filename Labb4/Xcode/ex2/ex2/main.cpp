@@ -9,8 +9,11 @@ using namespace std;
 
 typedef vector<string> vec;
 typedef map<string,vec> mp;
+typedef istream_iterator<string> is;
+typedef ostream_iterator<string> os;
+typedef pair<string, vec> par;
 
-void printMap(map<string,vector<string>>::iterator it, ostream_iterator<string> &outIt)
+void printMap(mp::iterator it, ostream_iterator<string> &outIt)
 {
     copy(it->second.begin(), it->second.end(), outIt);
 }
@@ -36,8 +39,8 @@ int read(mp &word){
         return 0;
     }
     
-    istream_iterator<string> in_it(infil);
-    istream_iterator<string> in_end;
+    is in_it(infil);
+    is in_end;
     mp::iterator it;
     
     while (infil>>s) {
@@ -69,9 +72,9 @@ void print(mp &word, int counter){
     
     cout << "Number of words: " << counter << endl;
     
-    ostream_iterator<string> outIt(cout, " ");
+    os outIt(cout, " ");
     
-    for_each(word.begin(), word.end(), [outIt] (pair<string, vector<string>> p){if (p.second.size() != 1){
+    for_each(word.begin(), word.end(), [outIt] (par p){if (p.second.size() != 1){
         copy(p.second.begin(), p.second.end(), outIt);
         cout << "   -->   "<< p.second.size() << " words." << endl;
     } });
