@@ -57,6 +57,7 @@ int read(mp &word){
         s = "";
     }
     
+    
     infil.close();
     return counter;
     
@@ -71,10 +72,16 @@ void print(mp &word, int counter){
     
     ostream_iterator<string> outIt(cout, " ");
     
-    for_each(word.begin(), word.end(), [outIt] (pair<string, vector<string>> p){if (p.second.size() != 1){
+    
+    vector<pair<string,vector<string>>> wordvec(word.begin(), word.end());
+    
+    sort(wordvec.begin(), wordvec.end(), [](pair<string, vector<string>> p, pair<string, vector<string>> q) { return p.second.size()>q.second.size();
+    });
+    
+    for_each(wordvec.begin(), wordvec.end(), [outIt] (pair<string, vector<string>> p){
         copy(p.second.begin(), p.second.end(), outIt);
         cout << "   -->   "<< p.second.size() << " words." << endl;
-    } });
+    });
     
 }
 
