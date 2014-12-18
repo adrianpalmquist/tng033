@@ -21,6 +21,7 @@ typedef pair<int, string> par_is;
 typedef pair<string, int> par_si;
 typedef vector<par_is> vecPar;
 typedef map<string, int> mp;
+typedef istream_iterator<string> is_i;
 
 
 //Jämför
@@ -57,7 +58,6 @@ void print(vecPar &par_vec, mp &word, int counter)
 }
 
 
-//Läs in
 int read(mp &word)
 {
     string file_name;
@@ -78,8 +78,8 @@ int read(mp &word)
         return 0;
     }
     
-    istream_iterator<string> in_it(infil);
-    istream_iterator<string> in_end;
+    is_i in_it(infil);
+    is_i in_end;
     mp::iterator it;
     
     while (infil>>s) {
@@ -87,16 +87,16 @@ int read(mp &word)
         s.resize(remove_if(s.begin(), s.end(),[](char x){return !isalnum(x) && !isspace(x);})-s.begin()); //Check if character is alphanumeric
         transform(s.begin(), s.end(), s.begin(), ::tolower);
         
-        it = word.find(s);
-        
+        //it = word.find(s);
+        /*
         if (it != word.end())
         {
             word[s] = it->second + 1;
         }
         else
-        {
+        {*/
             word[s]++;
-        }
+        //}
         
         counter++;
         s = "";
