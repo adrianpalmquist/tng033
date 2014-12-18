@@ -28,15 +28,6 @@ bool comp(par i, par j)
     return (i.first > j.first);
 }
 
-void printMap(pair<string,int> p)
-{
-    cout << p.first << ": ";
-    cout << p.second << endl;
-    pair <int,string> pr (p.second,p.first);
-    //par_vec.push_back(pr);
-}
-
-
 //Skriv ut
 void print(vecPar &par_vec, mp &word, int counter)
 {
@@ -46,18 +37,9 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     cout << "Sortering i bokstavsordning:" << endl << endl;
     
-    for_each(word.begin(), word.end(), [](pair<string, int> p) {cout << p.first << ": " << p.second << endl;});
-    
-    
-    /*
-    for (it = word.begin(); it != word.end(); it++){
-    printMap(it);
-    pair <int,string> p (it->second,it->first);
-    par_vec.push_back(p);
-    }
-    */
-    
-    
+    for_each(word.begin(), word.end(), [&par_vec](pair<string, int> p) {cout << p.first << ": " << p.second << endl;
+        pair <int,string> pr (p.second,p.first);
+        par_vec.push_back(pr);});
     
     
     cout << endl;
@@ -66,11 +48,7 @@ void print(vecPar &par_vec, mp &word, int counter)
     
     sort(par_vec.begin(),par_vec.end(), comp);
     
-    
-    for(it_vec=par_vec.begin(); it_vec != par_vec.end(); it_vec++)
-    {
-        cout << it_vec->second << ": " << it_vec->first << endl;
-    }
+    for_each(par_vec.begin(), par_vec.end(), [](par p) {cout << p.second << ": " << p.first << endl;});
     
     
     

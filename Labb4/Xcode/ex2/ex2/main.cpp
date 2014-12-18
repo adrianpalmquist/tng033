@@ -59,10 +59,7 @@ int read(mp &word){
         
         it = word.find(s);
         
-       // if (it != word.end())
-        //{
-            word[s].push_back(temp);
-        //}
+        word[s].push_back(temp);
         
         counter++;
         s = "";
@@ -80,17 +77,12 @@ void print(mp &word, int counter){
     
     cout << "Number of words: " << counter << endl;
     
-    
-    //for_each(it_begin, it_end, printPair);
-    
     ostream_iterator<string> outIt(cout, " ");
     
-    for (it = word.begin(); it != word.end(); it++){
-        if (it->second.size() != 1){
-        copy(it->second.begin(), it->second.end(), outIt);
-        cout << "   -->   "<< it->second.size() << " words." << endl;
-        }
-    }
+    for_each(word.begin(), word.end(), [outIt] (pair<string, vector<string>> p){if (p.second.size() != 1){
+        copy(p.second.begin(), p.second.end(), outIt);
+        cout << "   -->   "<< p.second.size() << " words." << endl;
+    } });
     
 }
 
